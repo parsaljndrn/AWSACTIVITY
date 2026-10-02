@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACSS - Association of Computer Science Students</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header / Navbar -->
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="brand-logo">
+            <div class="logo-icon"><img src="logo.png" style="height: 50px; width: 50px;"></div>
+            <div class="logo-text-group">
+                <span class="logo-title">Association of Computer Science Students</span>
+                <span class="logo-subtitle">UE Caloocan - Recognized Student Organization</span>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#mission" class="nav-link">Mission</a>
+            <a href="#events" class="nav-link">Upcoming Events</a>
+            <a href="#contact" class="nav-link">Contact Info</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#join" class="btn btn-primary btn-sm hidden-mobile">Join Us</a>
+            <button id="mobileMenuBtn" class="icon-btn mobile-only" aria-label="Open Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobileDropdown" class="mobile-menu">
+        <a href="#hero" class="mobile-link">Home</a>
+        <a href="#mission" class="mobile-link">Mission</a>
+        <a href="#events" class="mobile-link">Upcoming Events</a>
+        <a href="#officers" class="mobile-link">Officers</a>
+        <a href="#join" class="mobile-link">Be a Member</a>
+        <a href="#contact" class="mobile-link">Contact Info</a>
+        <a href="#join" class="btn btn-primary full-width">Be a Member</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-glow glow-1"></div>
+        <div class="hero-bg-glow glow-2"></div>
+        <div class="container grid grid-2 items-center">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Empowering Future Tech Professionals
+                </div>
+                <h1 class="hero-title">
+                    Association of <br>
+                    <span class="text-gradient">Computer Studies</span> Students
+                </h1>
+                <p class="hero-description">
+                    ACSS is a recognized student organization in UE - Caloocan consisting of Computer Science, Information Technology, and Data Science students. Let us grow and ACSSend to greatness with ACSS.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#join" class="btn btn-primary btn-lg">
+                        Join ACSS Today <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#events" class="btn btn-secondary btn-lg">
+                        Explore Events
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glass-card visual-card">
+                    <img src="front.JPEG" 
+                         alt="ACSS Collaboration Workshop" 
+                         class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section section-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">About ACSS</span>
+                <h2 class="section-title">Our Mission & Core Values</h2>
+                <p class="section-description">Driven by curiosity, fueled by code, and dedicated to academic and technical excellence.</p>
+            </div>
+
+            <div class="grid grid-3 gap-lg" style="margin-top: 50px;">
+                <article class="card glass-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">
+                        To cultivate a thriving environment for Computer Science students through high-quality technical workshops, peer mentorship, hackathons, and real-world software development initiatives.
+                    </p>
+                </article>
+
+                <article class="card glass-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="card-title">Our Vision</h3>
+                    <p class="card-text">
+                        To become a premier student organization recognized for producing visionary software engineers, innovators, and technological leaders who solve global challenges through code.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <div class="flex-between items-end mb-xl">
+                <div>
+                    <span class="section-subtitle">Schedule & Activities</span>
+                    <h2 class="section-title">Upcoming Events</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-3 gap-lg events-grid">
+                <!-- Event 1 -->
+                <article class="card event-card workshop glass-card">
+                    <div class="event-image-wrapper">
+                        <img src="picture3.jpg" 
+                             alt="TECHFORGE: THESIS SEMINAR" 
+                             class="event-img">
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date">
+                            <i class="fa-regular fa-calendar"></i> August 3, 2026 • 2:00 PM
+                        </div>
+                        <h3 class="event-title">TECHFORGE: THESIS SEMINAR</h3>
+                        <p class="event-desc">An in-depth seminar for 3rd year and 4th year Computer Studies Students as guide for their upcoming and ongoing thesis.</p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fa-solid fa-location-dot"></i>EN MPH 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event 2 -->
+                <article class="card event-card hackathon glass-card">
+                    <div class="event-image-wrapper">
+                        <img src="picture2.jpg" 
+                             alt="CodeCraft 24-Hour Hackathon" 
+                             class="event-img">
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date">
+                            <i class="fa-regular fa-calendar"></i> October 21, 2026 • 1:00 PM
+                        </div>
+                        <h3 class="event-title">ACSS General Assembly</h3>
+                        <p class="event-desc">A time to have fun, interact, and collaborate with fellow computer studies students. </p>
+                        <div class="event-footer">
+                            <span class="event-location"><i class="fa-solid fa-location-dot"></i>EN MPH 1</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Be a Member Section -->
+    <section id="join" class="section">
+        <div class="container container-sm">
+            <div class="card glass-card form-card">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Join the Community</span>
+                    <h2 class="section-title">Be an ACSS Member Today</h2>
+                </div>
+                <img SRC="qr.png" style="width: 750px; width: 750px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="grid grid-2 gap-xl items-center">
+                <div class="contact-info">
+                    <span class="section-subtitle">Reach Out</span>
+                    <h2 class="section-title">Contact Information</h2>
+                    <p class="section-description">Have questions regarding membership, sponsorships, or upcoming hackathons? Drop us a line!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Physical Office</h4>
+                                <p>ACSS Office, 3rd Floor, Right Wing, EN Building, UE Caloocan<br>College of Computer Studies</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>acss.uec2627@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Notice: Officers availability are not guaranteed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="grid grid-4 gap-lg footer-top">
+            <div class="footer-brand">
+                <a href="#" class="brand-logo">
+                    <div class="logo-icon"><img src="logo.png" style="width: 50px;height: 40px;"></div>
+                    <span class="logo-title text-white">Association of Computer Studies Students</span>
+                </a>
+                <p class="footer-desc">Association of Computer Studies Students. Empowering student developers, researchers, and innovators through shared knowledge.</p>
+                <div class="social-links">
+                    <a href="facebook.com/UEACSS" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileDropdown = document.getElementById('mobileDropdown');
+
+        if (mobileMenuBtn && mobileDropdown) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileDropdown.classList.toggle('open');
+            });
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileDropdown.classList.remove('open');
+                });
+            });
+        }
+
+        // Event Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const eventCards = document.querySelectorAll('.event-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.getAttribute('data-filter');
+
+                eventCards.forEach(card => {
+                    if (category === 'all' || card.classList.contains(category)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Form Handling
+        const membershipForm = document.getElementById('membershipForm');
+        const formFeedback = document.getElementById('formFeedback');
+
+        if (membershipForm) {
+            membershipForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                membershipForm.reset();
+                if (formFeedback) {
+                    formFeedback.classList.remove('hidden');
+                    setTimeout(() => {
+                        formFeedback.classList.add('hidden');
+                    }, 6000);
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
